@@ -8,7 +8,8 @@
             <span >商品搜索, 共</span> <span >24027</span> <span >款好物</span>
           </span>
       </router-link>
-          <span class="signin">登录</span>
+      <van-button plain type="danger" to="/order" size="mini" class="signin">登录</van-button>
+         
 
     </div>
     <v-indexTabs :tabs="tabs"></v-indexTabs>
@@ -87,6 +88,5 @@ export default {
   font-size: .36755rem;
   border: 1px solid red;
   border-radius: 5px;
-  margin-left: .96667rem;
 }
 </style>
