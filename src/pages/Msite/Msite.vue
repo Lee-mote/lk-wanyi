@@ -8,7 +8,10 @@
     <Discount />
     <Vip />
     <SellWell />
-
+    <Limited />
+    <New/>
+    <FooterOther/>
+    <Footer/>
   </div>
 </template>
 
@@ -21,12 +24,14 @@ import Spirit from './Spirit/Spirit'
 import Discount from './Discount/Discount'
 import Vip from './Vip/Vip'
 import SellWell from './SellWell/SellWell'
-
-
+import Limited from './Limited/Limited'
+import New from './New/New'
+import FooterOther from './FooterOther/FooterOther'
+import Footer from './Footer/Footer'
 
 
 export default {
-  name: 'Home',
+  name: 'Msite',
   components: {
     Header,
     Nav,
@@ -35,7 +40,11 @@ export default {
     Spirit,
     Discount,
     Vip,
-    SellWell
+    SellWell,
+    Limited,
+    New,
+    FooterOther,
+    Footer
   }
 }
 </script>

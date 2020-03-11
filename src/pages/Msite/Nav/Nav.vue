@@ -2,8 +2,7 @@
   <div id="nav">
  <van-tabs>
    <van-tab v-for="(item,index) in titles" :title="titles[index]" :key="index" class="tab" >
-<van-icon name="arrow-down" class="icon" />
-
+     <van-icon name="arrow-down" class="icon" />
    </van-tab>
 </van-tabs>
   </div>

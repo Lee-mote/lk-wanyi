@@ -2,15 +2,8 @@
   <div class="header-container">
     <div class="line" >
       <router-link to="/"  class="logo"></router-link>
-      <router-link to="/search" class="m-topSearchIpt ipt" >
-          <i class="icon" ></i>
-          <span class="placeholder" >
-            <span >商品搜索, 共</span> <span >24027</span> <span >款好物</span>
-          </span>
-      </router-link>
+      <van-search placeholder="搜索商品，共23688款好物"  input-align="center"/>
       <van-button plain type="danger" to="/order" size="mini" class="signin">登录</van-button>
-         
-
     </div>
     <v-indexTabs :tabs="tabs"></v-indexTabs>
   </div>
@@ -53,40 +46,5 @@ export default {
     background-position: center;
 }
 
-.ipt {
-    width: 52%;
-}
-.m-topSearchIpt {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: center;
-    height: .74667rem;
-    font-size: .37333rem;
-    background-color: #ededed;
-    border-radius: .10667rem;
-    text-decoration: none;
-}
-.m-topSearchIpt .icon {
-    vertical-align: middle;
-    background-image: url(http://yanxuan.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/search2-2fb94833aa.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    margin-right: .13333rem;
-}
-.m-topSearchIpt .icon {
-    display: inline-block;
-    width: .37333rem;
-    height: .37333rem;
-}
-.m-topSearchIpt .placeholder {
-    color: #666;
-    text-decoration: none;
-}
-.signin{
-  color: red;
-  font-size: .36755rem;
-  border: 1px solid red;
-  border-radius: 5px;
-}
+
 </style>
