@@ -33,7 +33,7 @@
         />
         <van-button type="default" color="#DD1A17" size="large" @click="userLogin">登录</van-button>
       </div>
-      <div class="loginTab" @click="$bus.$emit('isShowLoginTab',0)">
+      <div class="loginTab" @click="goto('/userLogin')">
         <span >其他的登录方式</span>
         <van-icon name="arrow" size="16px" />
       </div>
@@ -51,11 +51,14 @@ export default {
     }
   },
   methods: {
+     goto(path){
+      this.$router.replace(path)
+    },
     userLogin () {
       const { name, pwd } = this
       console.log(name, pwd);
-
-    },
+    }
+   
   }
 }
 </script>

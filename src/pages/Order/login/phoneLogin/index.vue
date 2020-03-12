@@ -35,7 +35,7 @@
         </div>
         <van-button type="default" color="#DD1A17" size="large" @click="phoneLogin">登录</van-button>
       </div>
-      <div class="loginTab" @click="$bus.$emit('isShowLoginTab',0)">
+      <div class="loginTab" @click="goto('/phoneLogin')">
         <span @click="goto('/loginTab')">其他的登录方式</span>
         <van-icon name="arrow" size="16px" />
       </div>
@@ -54,6 +54,9 @@ export default {
     }
   },
   methods: {
+      goto(path){
+      this.$router.replace(path)
+    },
     getCode () {
       this.computedTime = 5
       this.timeId = setInterval(() => {

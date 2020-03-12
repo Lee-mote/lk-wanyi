@@ -3,10 +3,10 @@ import Sort from '../pages/Sort/Sort.vue'
 import Worth from '../pages/Worth/Worth.vue'
 import Shop from '../pages/Shop/Shop.vue'
 import Order from '../pages/Order/Order.vue'
-import Login from '../components/login'
-import PhoneLogin from '../components/login/phoneLogin/index.vue'
-import UserLogin from '../components/login/userLogin/index.vue'
-import LoginTab from '../components/login/loginTab/index.vue'
+import Login from '../pages/Order/login'
+import PhoneLogin from '../pages/Order/login/phoneLogin/index.vue'
+import UserLogin from '../pages/Order/login/userLogin/index.vue'
+import LoginTab from '../pages/Order/login/loginTab/index.vue'
 
 
 const routes = [

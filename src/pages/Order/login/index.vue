@@ -1,23 +1,16 @@
 <template>
   <div class="loginContainer" :style="{backgroundColor: loginMethod ? '#fff' : '#eee'}">
     <Header/>
-    <!-- 手机登录 -->
     <PhoneLogin  v-if="loginMethod === 1"/>
-    <!-- 用户名等登录 -->
     <UserLogin v-if="loginMethod === 2" />
-    <!-- 登录选项页 -->
     <LoginTab v-if="loginMethod === 0" />
   </div>
 </template>
 
 <script>
-// 头部插槽
 import Header from '../header'
-// 登录首页
 import LoginTab from './loginTab'
-// 手机号登录组件
 import PhoneLogin from './phoneLogin'
-// 用户名等登录组件
 import UserLogin from './userLogin'
 export default {
   name: 'Login',
@@ -36,9 +29,7 @@ export default {
     this.$bus.$on('isShowLoginTab', this.isShowLoginTab)
   },
   methods: {
-    // 切换登录选项
     isShowLoginTab (num) {
-      // 切换登录选项
       this.loginMethod = num
     }
   }

@@ -1,9 +1,9 @@
 <template>
   <div>
     <Header />
-    <Nav />
-    <Swiper />
-    <Promise />
+    <!-- <Nav /> -->
+    <!-- <Swiper /> -->
+    <!-- <Promise /> -->
     <Spirit />
     <Discount />
     <Vip />
@@ -17,9 +17,9 @@
 
 <script>
 import Header from './Header/Header'
-import Nav from './Nav/Nav'
-import Swiper from './Swiper/Swiper/Swiper'
-import Promise from './Promise/Promise'
+// import Nav from './Nav/Nav'
+// import Swiper from './Swiper/Swiper'
+// import Promise from './Promise/Promise'
 import Spirit from './Spirit/Spirit'
 import Discount from './Discount/Discount'
 import Vip from './Vip/Vip'
@@ -34,9 +34,9 @@ export default {
   name: 'Msite',
   components: {
     Header,
-    Nav,
-    Swiper,
-    Promise,
+    // Nav,
+    // Swiper,
+    // Promise,
     Spirit,
     Discount,
     Vip,

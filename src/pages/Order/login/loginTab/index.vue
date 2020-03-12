@@ -1,6 +1,6 @@
 <template>
   <div class="login">
-    <img src="../images/bj.png" class="yx" />
+    <img src="../images/bj.png" class="login_bg" />
     <div class="btn" >
       <van-button type="default" color="#DD1A17" size="large" icon="phone-o" @click="goto('/phoneLogin')">手机号码登录</van-button>
       <van-button type="default" color="#000" size="large" icon="envelop-o"  @click="goto('/userLogin')">邮箱账号登录</van-button>
@@ -39,7 +39,7 @@ export default {
 .login
     width 335px
     margin 0 auto
-    .yx
+    .login_bg
       width 135px
       height 45px
       margin 70px 100px 100px
